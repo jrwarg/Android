@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android",
+    "module": "zipflinger",
+    "version": "7.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "zipflinger-7.0.2.jar",
+          "url": "zipflinger-7.0.2.jar",
+          "size": 60973,
+          "sha512": "f8e9b8be8d3edce98a85cc127cf0cb3f4f367db07044249e2b482b2e3c1dca66207c7c68fa3289823c68c3576ba66f18d408ed607cb423a6cb02fb8a5113d37a",
+          "sha256": "56a1c337fb532885906e1e7d4ce50ddebdf9fdb22fb35573b8a3ab85446a7666",
+          "sha1": "3a003ee25bb9d4064d4696ae6445e72a0d66c81d",
+          "md5": "6f5aa8bd81fbb946248c6342ee371f46"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "30.0.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "zipflinger-7.0.2.jar",
+          "url": "zipflinger-7.0.2.jar",
+          "size": 60973,
+          "sha512": "f8e9b8be8d3edce98a85cc127cf0cb3f4f367db07044249e2b482b2e3c1dca66207c7c68fa3289823c68c3576ba66f18d408ed607cb423a6cb02fb8a5113d37a",
+          "sha256": "56a1c337fb532885906e1e7d4ce50ddebdf9fdb22fb35573b8a3ab85446a7666",
+          "sha1": "3a003ee25bb9d4064d4696ae6445e72a0d66c81d",
+          "md5": "6f5aa8bd81fbb946248c6342ee371f46"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "zipflinger-7.0.2-javadoc.jar",
+          "url": "zipflinger-7.0.2-javadoc.jar",
+          "size": 476752,
+          "sha512": "59487969b985af0e88841efca3d77ebfeb2c597f1dd59f16a643735f28e607bd5f3373b0d9a7277842f358d8391b4d0bba86d5eae2540c792710363f4862e4be",
+          "sha256": "35b28c57fa1c7ca1f3ebe75248d66ac471f2724287f252591e0824cb3b1b099b",
+          "sha1": "b10dfed8050b63af6f2db51637e68f19495bf1cc",
+          "md5": "2b0946620b140a012622073c41ad21cd"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "zipflinger-7.0.2-sources.jar",
+          "url": "zipflinger-7.0.2-sources.jar",
+          "size": 48567,
+          "sha512": "0dbb6ae45cea9bd577b34b177297e0ac298e9c84251cdb5284ed46f09a0b715f6415757050cdd0819e4f5b06e23066b06f8bc1572d70356fd728093781090153",
+          "sha256": "7b6cd9318a3b105a50f5e921d58407823e992bcabb72f0b0f5c8735c63ea6ca4",
+          "sha1": "00d6c408eb39e3708347bc28ddd8187028ca9e27",
+          "md5": "86c28ed33fea88e421cba3987b327c66"
+        }
+      ]
+    }
+  ]
+}

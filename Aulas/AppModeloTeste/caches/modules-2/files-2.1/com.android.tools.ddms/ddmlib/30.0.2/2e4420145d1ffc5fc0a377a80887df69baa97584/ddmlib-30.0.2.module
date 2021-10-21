@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.ddms",
+    "module": "ddmlib",
+    "version": "30.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ddmlib-30.0.2.jar",
+          "url": "ddmlib-30.0.2.jar",
+          "size": 557054,
+          "sha512": "4c53a941c0901c383f2e9e9a432ae6f2e6100b0e7490e0b171a7b71735395767a951026358b18ea7513daa286fbd782a555e5b73f5a157d517e41e07cbf5efef",
+          "sha256": "9fff8359a62e823702c7ffe250a9a6d062e1d1e6a0e10f26cae516a26074cd92",
+          "sha1": "cc7bb4562040fba01fe4a95b410c9f58b0eed4af",
+          "md5": "94686ce55297e33add36662f0db4b88b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "30.0.2"
+          }
+        },
+        {
+          "group": "net.sf.kxml",
+          "module": "kxml2",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ddmlib-30.0.2.jar",
+          "url": "ddmlib-30.0.2.jar",
+          "size": 557054,
+          "sha512": "4c53a941c0901c383f2e9e9a432ae6f2e6100b0e7490e0b171a7b71735395767a951026358b18ea7513daa286fbd782a555e5b73f5a157d517e41e07cbf5efef",
+          "sha256": "9fff8359a62e823702c7ffe250a9a6d062e1d1e6a0e10f26cae516a26074cd92",
+          "sha1": "cc7bb4562040fba01fe4a95b410c9f58b0eed4af",
+          "md5": "94686ce55297e33add36662f0db4b88b"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ddmlib-30.0.2-javadoc.jar",
+          "url": "ddmlib-30.0.2-javadoc.jar",
+          "size": 1202009,
+          "sha512": "37cfe8c30665dfbc0c9ef38d67624cce91f44bef925e7a279005b226cdbcb1e1a1a7ab1a29fe37fff15128f111be07460e88e40280c0803beedeb8d885ade415",
+          "sha256": "b409154f8ac21ce85651117f1523f04e52f689f2081a400d565619110e8ede1e",
+          "sha1": "2bc1f615ce824cc518915b4265c27b599d860215",
+          "md5": "ca97cfb2b85a67aa7d7a7633dd1281a8"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ddmlib-30.0.2-sources.jar",
+          "url": "ddmlib-30.0.2-sources.jar",
+          "size": 694006,
+          "sha512": "089a2d983949474744da99ac80c10574c5be0807dc829cdbeefe6bd2ff9886b104dbcb7514b631297971bfe766daebb92a79563042484464c6b75d904ef5b768",
+          "sha256": "260b6df4a2f913518c86b67241bd6200e6c1dc936ffa14a354b6ad8424a69995",
+          "sha1": "9e6a3e21f7e67856aaa9d3731bfb358e3b610ce1",
+          "md5": "deb589ae450126bd10363a0c75002ed9"
+        }
+      ]
+    }
+  ]
+}
