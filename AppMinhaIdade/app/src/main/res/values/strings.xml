@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppMinhaIdade</string>
+    <string name="textView">Minha Idade</string>
+    <string name="textVersion">V 1.0 2021</string>
+    <string name="textView_title">Minha Idade</string>
+    <string name="textView_infoname">Qual seu primeiro nome?</string>
+    <string name="editText_TextPersonName">Informe seu primeiro nome</string>
+    <string name="textView_infoyear">Em que ano você nasceu?</string>
+    <string name="editText_birthYear">Informe o ano de seu nascimento(YYYY)</string>
+    <string name="button_calcidade">CALCULAR IDADE</string>
+    <string name="button_novocalc">NOVO CÁLCULO</string>
+    <string name="textView_result">TextView</string>
+    <string name="button_exit">SAIR</string>
+</resources>
