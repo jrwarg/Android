@@ -9,6 +9,6 @@
     <string name="editText_birthYear">Informe o ano de seu nascimento(YYYY)</string>
     <string name="button_calcidade">CALCULAR IDADE</string>
     <string name="button_novocalc">NOVO CÁLCULO</string>
-    <string name="textView_result">TextView</string>
     <string name="button_exit">SAIR</string>
+    <string name="textView_result">Texto</string>
 </resources>

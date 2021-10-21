@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.appminhaidade.R
+import com.example.appminhaidade.controller.PessoaController
 import com.example.appminhaidade.model.Pessoa
 import java.time.LocalDate
 
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var button_ageCalc: Button
     lateinit var textView_result: TextView
     lateinit var button_exit: Button
-    lateinit var pessoa: Pessoa
+    lateinit var objetoPessoa: Pessoa
+    lateinit var pessoaController: PessoaController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,9 +43,13 @@ class MainActivity : AppCompatActivity() {
         textView_result = findViewById(R.id.textView_result)
         button_exit = findViewById(R.id.button_exit)
 
+        objetoPessoa = Pessoa() // => Isto é um CONSTRUTOR padrão!!
+
+        pessoaController = PessoaController(objetoPessoa)
+
         // setando a saída do texto de resultado
 
-        textView_result.setText("Aplicativo inicializado com sucesso....")
+        textView_result.setText("")
     }
 
     private fun initButtonClick() {
@@ -60,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         button_novocalc.setOnClickListener {
             editText_TextPersonName.setText("")
             editText_birthYear.setText("")
+            textView_result.setText("")
         }
 
         button_ageCalc.setOnClickListener {
@@ -80,6 +87,13 @@ class MainActivity : AppCompatActivity() {
             if (validate) {
 
                 val birthYear = editText_birthYear.text.toString().toInt()
+                // montar textView:
+                val firstName = editText_TextPersonName.text
+
+                objetoPessoa.firstName =
+                    firstName.toString() // firstName está setado como String na Classe Pessoa...
+                objetoPessoa.birthYear = birthYear.toInt()
+
                 val currentYear = LocalDate.now().year
 
                 if (birthYear >= currentYear) {
@@ -87,12 +101,10 @@ class MainActivity : AppCompatActivity() {
                     editText_birthYear.requestFocus()
                 } else {
 
-                    val ageCalc = currentYear - birthYear
+                    val ageCalc = pessoaController.calculateAgeYears()
 
-                    // montar textView:
-                    val firstName = editText_TextPersonName.text
+                    textView_result.setText("${pessoaController.pessoa.firstName}, você tem ${pessoaController.calculateAgeYears()} de idade!")
 
-                    textView_result.setText("$firstName, você tem $ageCalc anos de vida!")
                 }
             }
         }
